@@ -85,13 +85,11 @@ ingress:
  frontend:
   enabled: true
   hosts:
-   - host: flagsmith.[MYDOMAIN]
-     paths:
-      - /
+   - flagsmith.[MYDOMAIN]
  api:
   enabled: true
   hosts:
-   - host: flagsmith.[MYDOMAIN]
+   - flagsmith.[MYDOMAIN]
      paths:
       - /api/
       - /health/
@@ -116,9 +114,7 @@ ingress:
  frontend:
   enabled: true
   hosts:
-   - host: flagsmith.local
-     paths:
-      - /
+   - flagsmith.local
 ```
 
 and apply. This will create two ingress resources.
